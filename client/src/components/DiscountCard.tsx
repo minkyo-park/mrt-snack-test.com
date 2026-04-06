@@ -35,16 +35,16 @@ const DiscountCard = ({
 
       <div className="space-y-3 mb-4">
         <div>
-          <p className="text-xs text-muted-foreground font-medium uppercase">Condition</p>
+          <p className="text-xs text-muted-foreground font-medium">최소 결제금액</p>
           <p className="text-sm text-foreground">{condition}</p>
         </div>
         <div>
-          <p className="text-xs text-muted-foreground font-medium uppercase">Target</p>
+          <p className="text-xs text-muted-foreground font-medium">적용 대상</p>
           <p className="text-sm text-foreground">{target}</p>
         </div>
         {validity && (
           <div>
-            <p className="text-xs text-muted-foreground font-medium uppercase">Validity</p>
+            <p className="text-xs text-muted-foreground font-medium">유효기간</p>
             <p className="text-sm text-foreground">{validity}</p>
           </div>
         )}
@@ -55,7 +55,7 @@ const DiscountCard = ({
         )}
       </div>
 
-      <CopyButton text={code} label="Copy Code" variant="default" />
+      <CopyButton text={code} label="코드 복사 & 바로가기" variant="default" />
     </div>
   );
 };

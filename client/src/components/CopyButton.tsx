@@ -8,21 +8,22 @@ interface CopyButtonProps {
   variant?: 'default' | 'outline' | 'secondary';
 }
 
-const CopyButton = ({ text, label = 'Copy Code', variant = 'default' }: CopyButtonProps) => {
+const CopyButton = ({ text, label = '코드 복사', variant = 'default' }: CopyButtonProps) => {
   const [isCopied, setIsCopied] = useState(false);
 
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(text);
       setIsCopied(true);
-      toast.success('Copied to clipboard!');
+      toast.success('클립보드에 복사되었습니다!');
+      window.open('https://myrealt.rip/S3YG0a', '_blank', 'noopener,noreferrer');
       setTimeout(() => setIsCopied(false), 2000);
     } catch (err) {
-      toast.error('Failed to copy');
+      toast.error('복사에 실패했습니다');
     }
   };
 
-  const baseStyles = 'inline-flex items-center gap-2 px-4 py-2 rounded-md font-medium transition-all duration-200 text-sm';
+  const baseStyles = 'inline-flex items-center gap-2 px-4 py-2 rounded-md font-medium transition-all duration-200 text-sm w-full justify-center';
   const variantStyles = {
     default: 'bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800',
     outline: 'border-2 border-blue-600 text-blue-600 hover:bg-blue-50 active:bg-blue-100',
@@ -38,7 +39,7 @@ const CopyButton = ({ text, label = 'Copy Code', variant = 'default' }: CopyButt
       {isCopied ? (
         <>
           <Check size={16} />
-          <span>Copied!</span>
+          <span>복사 완료!</span>
         </>
       ) : (
         <>
