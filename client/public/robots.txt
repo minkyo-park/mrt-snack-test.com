@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+Allow: /discount-codes
+Allow: /card-discounts
+Allow: /flights
+Allow: /accommodation
+Allow: /comparison
+Allow: /faq
+Disallow: /404
+
+Sitemap: https://mrt.snack-test.com/sitemap.xml
+
+# Crawl delay (in seconds)
+Crawl-delay: 1
+
+# User-agent specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
