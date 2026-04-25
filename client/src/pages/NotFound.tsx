@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle, Home } from "lucide-react";
 import { useLocation } from "wouter";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 export default function NotFound() {
+  usePageTitle("페이지를 찾을 수 없습니다");
   const [, setLocation] = useLocation();
 
   const handleGoHome = () => {

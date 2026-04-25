@@ -5,8 +5,10 @@ import Footer from '@/components/Footer';
 import DiscountCard from '@/components/DiscountCard';
 import CopyButton from '@/components/CopyButton';
 import { FAQSchema } from '@/components/SchemaMarkup';
+import { usePageTitle } from '@/hooks/usePageTitle';
 
 const DiscountCodesPage = () => {
+  usePageTitle('할인코드');
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
 
   const discountCodes = {
@@ -115,7 +117,7 @@ const DiscountCodesPage = () => {
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold mb-4">할인코드 & 쿠폰</h1>
             <p className="text-xl text-blue-100">
-              2026년 4월 마이리얼트립 모든 활성 할인코드 - 결제 시 복사해서 사용하세요
+              2026년 5월 마이리얼트립 모든 활성 할인코드 - 결제 시 복사해서 사용하세요
             </p>
           </div>
         </section>
@@ -125,7 +127,7 @@ const DiscountCodesPage = () => {
           <div className="container mx-auto">
             <h3 className="font-bold text-amber-900 mb-2">중요 정보</h3>
             <ul className="text-sm text-amber-800 space-y-1">
-              <li>• 모든 코드는 2026년 4월 30일까지 유효합니다</li>
+              <li>• 모든 코드는 2026년 5월 31일까지 유효합니다</li>
               <li>• 쿠폰은 등록 후 7일 이내에 사용해야 합니다</li>
               <li>• 거래당 하나의 쿠폰만 적용됩니다 (카드사 할인과는 중복 가능)</li>
               <li>• 예산 제한 코드는 소진되면 조기 종료될 수 있습니다</li>

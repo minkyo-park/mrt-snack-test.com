@@ -1,7 +1,9 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { usePageTitle } from '@/hooks/usePageTitle';
 
 const AccommodationPage = () => {
+  usePageTitle('숙소 할인');
   const domesticAccom = [
     { area: '서울', types: '호텔, 한옥 스테이, 게스트하우스', popular: '명동, 강남, 홍대, 종로', priceRange: '5만원~30만원/박', tip: '주중 예약이 30~50% 저렴, 마이리얼트립 단독 특가 수시 오픈' },
     { area: '제주', types: '리조트, 펜션, 풀빌라, 게스트하우스', popular: '애월, 중문, 성산, 서귀포', priceRange: '8만원~40만원/박', tip: '비수기(3~5월, 9~11월) 가격이 절반 이하로 떨어지기도' },

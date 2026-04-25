@@ -2,8 +2,10 @@ import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { usePageTitle } from '@/hooks/usePageTitle';
 
 const CardDiscountsPage = () => {
+  usePageTitle('카드사 할인');
   const [expandedCard, setExpandedCard] = useState<string | null>(null);
 
   const cardDiscounts = [

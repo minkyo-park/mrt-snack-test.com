@@ -1,7 +1,9 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { usePageTitle } from '@/hooks/usePageTitle';
 
 const ComparisonPage = () => {
+  usePageTitle('비교 분석');
   const comparisonData = [
     {
       category: '할인코드 종류',

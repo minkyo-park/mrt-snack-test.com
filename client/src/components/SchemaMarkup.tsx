@@ -42,7 +42,7 @@ export const ArticleSchema = (props: {
       dateModified: props.dateModified || props.datePublished,
       author: {
         '@type': 'Organization',
-        name: props.author || 'MyRealTrip Coupon',
+        name: props.author || '마이리얼트립 할인쿠폰',
       },
     }}
   />

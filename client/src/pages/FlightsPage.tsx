@@ -1,7 +1,9 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { usePageTitle } from '@/hooks/usePageTitle';
 
 const FlightsPage = () => {
+  usePageTitle('항공권 할인');
   const domesticRoutes = [
     { route: '서울(김포) → 제주', airlines: '이스타항공, 제주항공, 티웨이항공, 진에어', price: '편도 3만원대~' },
     { route: '서울(김포) → 부산', airlines: '대한항공, 아시아나, 에어부산', price: '편도 4만원대~' },
