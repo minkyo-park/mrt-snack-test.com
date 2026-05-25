@@ -6,6 +6,11 @@ import CopyButton from '@/components/CopyButton';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { usePageTitle } from '@/hooks/usePageTitle';
+import coupon1 from '@/assets/coupon-1.webp';
+import coupon2 from '@/assets/coupon-2.webp';
+import coupon3 from '@/assets/coupon-3.webp';
+import coupon4 from '@/assets/coupon-4.webp';
+import coupon5 from '@/assets/coupon-5.webp';
 
 const Home = () => {
   usePageTitle();
@@ -14,6 +19,7 @@ const Home = () => {
   const topDiscounts = [
     {
       code: 'PACKMKTP5000',
+      image: coupon1,
       amount: '5,000원 할인',
       condition: '최소 150,000원',
       target: '투어 & 티켓',
@@ -21,6 +27,7 @@ const Home = () => {
     },
     {
       code: '2MKTPCH5000',
+      image: coupon2,
       amount: '5,000원 할인',
       condition: '최소 150,000원',
       target: '투어 & 티켓',
@@ -28,6 +35,7 @@ const Home = () => {
     },
     {
       code: 'PACKMKTP3000',
+      image: coupon3,
       amount: '3,000원 할인',
       condition: '최소 100,000원',
       target: '투어 & 티켓',
@@ -35,6 +43,7 @@ const Home = () => {
     },
     {
       code: '2MKTPCH3000',
+      image: coupon4,
       amount: '3,000원 할인',
       condition: '최소 100,000원',
       target: '투어 & 티켓',
@@ -42,6 +51,7 @@ const Home = () => {
     },
     {
       code: 'PACKMKTP1000',
+      image: coupon5,
       amount: '1,000원 할인',
       condition: '최소 50,000원',
       target: '투어 & 티켓',
@@ -167,6 +177,7 @@ const Home = () => {
                   condition={discount.condition}
                   target={discount.target}
                   note={discount.note}
+                  image={discount.image}
                   icon={<Tag size={20} />}
                 />
               ))}
