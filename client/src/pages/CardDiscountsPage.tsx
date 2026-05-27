@@ -272,7 +272,7 @@ const CardDiscountsPage = () => {
                         </div>
 
                         <a
-                          href="https://myrealt.rip/S3YG0a"
+                          href="https://myrealt.rip/aRT258"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
@@ -403,7 +403,7 @@ const CardDiscountsPage = () => {
               다음 예약에서 즉시 할인받으세요
             </p>
             <a
-              href="https://myrealt.rip/S3YG0a"
+              href="https://myrealt.rip/aRT258"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"

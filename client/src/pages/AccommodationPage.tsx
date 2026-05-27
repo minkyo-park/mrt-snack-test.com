@@ -199,7 +199,7 @@ const AccommodationPage = () => {
               할인코드와 카드사 혜택을 적용하여 최저가 숙소를 예약하세요
             </p>
             <a
-              href="https://myrealt.rip/S3YG0a"
+              href="https://myrealt.rip/aRT258"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"

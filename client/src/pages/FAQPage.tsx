@@ -165,7 +165,7 @@ const FAQPage = () => {
                   카카오톡 또는 전화로 문의하세요. 평일 09:00~18:00, 점심 12:00~13:00 제외.
                 </p>
                 <a
-                  href="https://myrealt.rip/S3YG0a"
+                  href="https://myrealt.rip/aRT258"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-700 text-sm font-medium"
@@ -211,7 +211,7 @@ const FAQPage = () => {
               할인코드와 카드사 혜택을 적용하여 마이리얼트립에서 최저가로 예약하세요
             </p>
             <a
-              href="https://myrealt.rip/S3YG0a"
+              href="https://myrealt.rip/aRT258"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"

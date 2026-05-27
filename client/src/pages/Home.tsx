@@ -112,7 +112,7 @@ const Home = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://myrealt.rip/S3YG0a"
+                  href="https://myrealt.rip/aRT258"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-lg"
@@ -217,7 +217,7 @@ const Home = () => {
                     <div className="flex justify-between"><span className="text-muted-foreground">할부</span><span className="font-semibold">{card.installment}</span></div>
                   </div>
                   <div className="mt-3">
-                    <a href="https://myrealt.rip/S3YG0a" target="_blank" rel="noopener noreferrer" className="block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">적용하기</a>
+                    <a href="https://myrealt.rip/aRT258" target="_blank" rel="noopener noreferrer" className="block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">적용하기</a>
                   </div>
                 </div>
               ))}
@@ -246,7 +246,7 @@ const Home = () => {
                       <td className="px-4 py-3">{card.accommodation}</td>
                       <td className="px-4 py-3 text-blue-600 text-xs">{card.extra}</td>
                       <td className="px-4 py-3 text-xs">{card.installment}</td>
-                      <td className="px-4 py-3"><a href="https://myrealt.rip/S3YG0a" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-xs font-semibold transition-colors">적용하기</a></td>
+                      <td className="px-4 py-3"><a href="https://myrealt.rip/aRT258" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-xs font-semibold transition-colors">적용하기</a></td>
                     </tr>
                   ))}
                 </tbody>
@@ -415,7 +415,7 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://myrealt.rip/S3YG0a"
+                href="https://myrealt.rip/aRT258"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-lg"

@@ -311,7 +311,7 @@ const DiscountCodesPage = () => {
               위의 할인코드를 복사하고 마이리얼트립에서 다음 여행을 예약하세요
             </p>
             <a
-              href="https://myrealt.rip/S3YG0a"
+              href="https://myrealt.rip/aRT258"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"

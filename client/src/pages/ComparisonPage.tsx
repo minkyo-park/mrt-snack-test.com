@@ -229,7 +229,7 @@ const ComparisonPage = () => {
               할인코드와 카드사 혜택을 적용하면 어떤 플랫폼보다 저렴하게 예약할 수 있습니다
             </p>
             <a
-              href="https://myrealt.rip/S3YG0a"
+              href="https://myrealt.rip/aRT258"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"

@@ -38,7 +38,7 @@ const Footer = () => {
             <p className="text-sm text-gray-300 mb-2">
               제휴 문의는 마이리얼트립 공식 웹사이트를 방문해주세요.
             </p>
-            <a href="https://myrealt.rip/S3YG0a" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+            <a href="https://myrealt.rip/aRT258" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
               마이리얼트립 방문
             </a>
           </div>

@@ -16,7 +16,7 @@ const CopyButton = ({ text, label = '코드 복사', variant = 'default' }: Copy
       await navigator.clipboard.writeText(text);
       setIsCopied(true);
       toast.success('클립보드에 복사되었습니다!');
-      window.open('https://myrealt.rip/S3YG0a', '_blank', 'noopener,noreferrer');
+      window.open('https://myrealt.rip/aRT258', '_blank', 'noopener,noreferrer');
       setTimeout(() => setIsCopied(false), 2000);
     } catch (err) {
       toast.error('복사에 실패했습니다');
