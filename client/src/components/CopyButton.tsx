@@ -6,9 +6,10 @@ interface CopyButtonProps {
   text: string;
   label?: string;
   variant?: 'default' | 'outline' | 'secondary';
+  href?: string;
 }
 
-const CopyButton = ({ text, label = '코드 복사', variant = 'default' }: CopyButtonProps) => {
+const CopyButton = ({ text, label = '코드 복사', variant = 'default', href = 'https://myrealt.rip/aRT258' }: CopyButtonProps) => {
   const [isCopied, setIsCopied] = useState(false);
 
   const handleCopy = async () => {
@@ -16,7 +17,7 @@ const CopyButton = ({ text, label = '코드 복사', variant = 'default' }: Copy
       await navigator.clipboard.writeText(text);
       setIsCopied(true);
       toast.success('클립보드에 복사되었습니다!');
-      window.open('https://myrealt.rip/aRT258', '_blank', 'noopener,noreferrer');
+      window.open(href, '_blank', 'noopener,noreferrer');
       setTimeout(() => setIsCopied(false), 2000);
     } catch (err) {
       toast.error('복사에 실패했습니다');

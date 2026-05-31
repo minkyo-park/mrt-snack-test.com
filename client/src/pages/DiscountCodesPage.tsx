@@ -81,6 +81,26 @@ const DiscountCodesPage = () => {
         note: '숙소에 적용',
       },
     ],
+    linkprice: [
+      {
+        code: 'LINKPRICE3000',
+        condition: '최소 150,000원',
+        amount: '3,000원 (약 2%)',
+        target: '해외 투어·티켓 전용',
+        validity: '발급 2026.6.1~6.30 / 발급일로부터 7일 이내 사용',
+        note: '선착순 한정 수량, 예산 소진 시 별도 안내 없이 종료, 일부 상품 사용 불가, 타 쿠폰 중복 불가',
+        href: 'https://myrealt.rip/ai1986',
+      },
+      {
+        code: 'LINKPRICE1000',
+        condition: '최소 50,000원',
+        amount: '1,000원 (약 2%)',
+        target: '해외 투어·티켓 전용',
+        validity: '발급 2026.6.1~6.30 / 발급일로부터 7일 이내 사용',
+        note: '선착순 한정 수량, 예산 소진 시 별도 안내 없이 종료, 일부 상품 사용 불가, 타 쿠폰 중복 불가',
+        href: 'https://myrealt.rip/ai1986',
+      },
+    ],
   };
 
   const faqData = [
@@ -117,7 +137,7 @@ const DiscountCodesPage = () => {
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold mb-4">할인코드 & 쿠폰</h1>
             <p className="text-xl text-blue-100">
-              2026년 5월 마이리얼트립 모든 활성 할인코드 - 결제 시 복사해서 사용하세요
+              2026년 6월 마이리얼트립 모든 활성 할인코드 - 결제 시 복사해서 사용하세요
             </p>
           </div>
         </section>
@@ -127,7 +147,7 @@ const DiscountCodesPage = () => {
           <div className="container mx-auto">
             <h3 className="font-bold text-amber-900 mb-2">중요 정보</h3>
             <ul className="text-sm text-amber-800 space-y-1">
-              <li>• 모든 코드는 2026년 5월 31일까지 유효합니다</li>
+              <li>• 모든 코드는 2026년 6월 30일까지 유효합니다</li>
               <li>• 쿠폰은 등록 후 7일 이내에 사용해야 합니다</li>
               <li>• 거래당 하나의 쿠폰만 적용됩니다 (카드사 할인과는 중복 가능)</li>
               <li>• 예산 제한 코드는 소진되면 조기 종료될 수 있습니다</li>
@@ -198,6 +218,32 @@ const DiscountCodesPage = () => {
                   condition={code.condition}
                   target={code.target}
                   note={code.note}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* LINKPRICE - 해외 투어·티켓 전용 */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="mb-8">
+              <span className="inline-block bg-emerald-600 text-white text-xs font-bold px-4 py-1 rounded-full mb-3">해외 투어·티켓 전용 · 신규</span>
+              <h2 className="text-3xl font-bold text-foreground mb-2">LINKPRICE 할인코드</h2>
+              <p className="text-muted-foreground">해외 투어·티켓 상품 전용 · 약 2% 할인 · 발급 2026년 6월 1일~6월 30일</p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {discountCodes['linkprice'].map((code) => (
+                <DiscountCard
+                  key={code.code}
+                  code={code.code}
+                  amount={code.amount}
+                  condition={code.condition}
+                  target={code.target}
+                  validity={code.validity}
+                  note={code.note}
+                  href={code.href}
                 />
               ))}
             </div>

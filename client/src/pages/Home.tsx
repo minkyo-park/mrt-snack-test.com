@@ -99,7 +99,7 @@ const Home = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl">
               <div className="flex flex-wrap gap-2 mb-6">
-                <span className="bg-white/20 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">🔥 2026년 5월 최신</span>
+                <span className="bg-white/20 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">🔥 2026년 6월 최신</span>
                 <span className="bg-white/20 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">✅ 실시간 업데이트</span>
                 <span className="bg-white/20 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full">💯 무료 정보</span>
               </div>
@@ -159,7 +159,7 @@ const Home = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <span className="inline-block bg-blue-600 text-white text-xs font-bold px-4 py-1 rounded-full mb-3">2026년 5월 최신</span>
+              <span className="inline-block bg-blue-600 text-white text-xs font-bold px-4 py-1 rounded-full mb-3">2026년 6월 최신</span>
               <h2 className="text-3xl font-bold text-foreground mb-2">지금 바로 사용 가능한 할인코드</h2>
               <p className="text-muted-foreground">아래 코드를 복사하여 마이리얼트립 쿠폰 등록에서 입력하세요</p>
             </div>

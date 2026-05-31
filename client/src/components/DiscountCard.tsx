@@ -9,6 +9,7 @@ interface DiscountCardProps {
   note?: string;
   icon?: React.ReactNode;
   image?: string;
+  href?: string;
 }
 
 const DiscountCard = ({
@@ -20,6 +21,7 @@ const DiscountCard = ({
   note,
   icon,
   image,
+  href,
 }: DiscountCardProps) => {
   return (
     <div className="bg-white border border-border rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
@@ -60,7 +62,7 @@ const DiscountCard = ({
         )}
       </div>
 
-      <CopyButton text={code} label="코드 복사 & 바로가기" variant="default" />
+      <CopyButton text={code} label="코드 복사 & 바로가기" variant="default" href={href} />
     </div>
   );
 };
