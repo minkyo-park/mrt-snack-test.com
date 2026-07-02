@@ -1,7 +1,8 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Switch, Router as WouterRouter } from "wouter";
+import type { BaseLocationHook, BaseSearchHook } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
@@ -12,7 +13,7 @@ import AccommodationPage from "./pages/AccommodationPage";
 import ComparisonPage from "./pages/ComparisonPage";
 import FAQPage from "./pages/FAQPage";
 
-function Router() {
+function AppRoutes() {
   return (
     <Switch>
       <Route path="/" component={Home} />
@@ -33,7 +34,23 @@ function Router() {
 //   to keep consistent foreground/background color across components
 // - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
 
-function App() {
+interface AppProps {
+  // Only supplied by the build-time prerender script (see scripts/prerender.mjs) to
+  // pin wouter to a fixed path outside the browser. Client bundle never passes this,
+  // so runtime behavior for real users is unchanged.
+  ssrHook?: BaseLocationHook;
+  ssrSearchHook?: BaseSearchHook;
+}
+
+function App({ ssrHook, ssrSearchHook }: AppProps = {}) {
+  const routes = ssrHook ? (
+    <WouterRouter hook={ssrHook} searchHook={ssrSearchHook}>
+      <AppRoutes />
+    </WouterRouter>
+  ) : (
+    <AppRoutes />
+  );
+
   return (
     <ErrorBoundary>
       <ThemeProvider
@@ -42,7 +59,7 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
-          <Router />
+          {routes}
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm install && vite build",
+  "buildCommand": "pnpm install && vite build && node scripts/prerender.mjs",
   "outputDirectory": "dist/public",
   "installCommand": "npm i -g pnpm && pnpm install",
   "rewrites": [
