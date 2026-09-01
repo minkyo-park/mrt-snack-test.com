@@ -6,7 +6,7 @@
   <!-- Home Page -->
   <url>
     <loc>https://mrt.snack-test.com/</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <mobile:mobile/>
@@ -15,7 +15,7 @@
   <!-- Discount Codes Page -->
   <url>
     <loc>https://mrt.snack-test.com/discount-codes</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <mobile:mobile/>
@@ -60,7 +60,7 @@
   <!-- FAQ Page -->
   <url>
     <loc>https://mrt.snack-test.com/faq</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <mobile:mobile/>
